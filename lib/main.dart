@@ -13,9 +13,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'DeliMeals',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.blue,
+        ).copyWith(secondary: Colors.amber),
+        textTheme: ThemeData.light().textTheme.copyWith(
+            bodyMedium: const TextStyle(
+              color: Color.fromARGB(20, 50, 50, 50),
+            ),
+            titleMedium: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            )),
       ),
-      home: const MyHomePage(title: 'DeliMeals Home Page'),
+      home: const CategoriesScreen(),
     );
   }
 }
@@ -28,21 +38,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: CategoriesScreen(),
+      body: const Text('test'),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
