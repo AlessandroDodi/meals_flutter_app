@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meals_flutter_app/categories_screen.dart';
-import 'package:meals_flutter_app/category_meal_screen.dart';
+import 'package:meals_flutter_app/screens/categories_screen.dart';
+import 'package:meals_flutter_app/screens/category_meal_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         ).copyWith(secondary: Colors.amber),
         textTheme: ThemeData.light().textTheme.copyWith(
             bodyMedium: const TextStyle(
-              color: Color.fromARGB(20, 50, 50, 50),
+              color: Color.fromARGB(255, 0, 0, 0),
             ),
             titleMedium: const TextStyle(
               fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
             )),
       ),
       home: const CategoriesScreen(),
-      routes: {'/category-meals': (context) => CategoryMealScreen()},
+      routes: {CategoryMealScreen.routeName: (context) => CategoryMealScreen()},
     );
   }
 }
