@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_flutter_app/screens/filters_sreen.dart';
 import './screens/tabs_screen.dart';
 import '/screens/categories_screen.dart';
 import '/screens/category_meal_screen.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
       routes: {
         CategoryMealScreen.routeName: (context) => const CategoryMealScreen(),
         MealDetailScreen.routeName: (context) => const MealDetailScreen(),
+        FiltersScreen.routeName: (context) => const FiltersScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
