@@ -1,16 +1,23 @@
 # meals_flutter_app
 
-A new Flutter project.
+This is a meals flutter app. It is a project inside the course Flutter & Dart - The Complete Guide [2023 Edition].
 
-## Getting Started
+This is the home page, where you can see recipes, grouped by category.
 
-This project is a starting point for a Flutter application.
+![home](https://user-images.githubusercontent.com/96247758/212550962-74575722-54a2-4242-a94a-724d0c6048b2.png)
 
-A few resources to get you started if this is your first Flutter project:
+Inside each category there are all the recipes, showing timing, difficulty and affordability.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![inside_category](https://user-images.githubusercontent.com/96247758/212551007-14ce8a60-6521-469f-8b1c-e70df006fce6.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Each recipe includes the ingredients and the steps necessary.
+
+![recipe](https://user-images.githubusercontent.com/96247758/212551086-6a7a7b51-08da-4dab-97d7-fe987072f4f4.png)
+
+It is possible to filter the selected recipes by using the filter page.
+
+![filters](https://user-images.githubusercontent.com/96247758/212551114-e9d010f6-2f3a-459d-8f97-0eee9dd7795b.png)
+
+The app also includes the possibility to put a recipe in the favorites category.
+
+![favorites](https://user-images.githubusercontent.com/96247758/212551141-07133f5e-ec16-46e7-929c-f48517ae2595.png)
