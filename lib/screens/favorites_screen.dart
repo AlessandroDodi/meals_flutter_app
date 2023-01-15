@@ -4,7 +4,7 @@ import 'package:meals_flutter_app/widgets/meal_item.dart';
 
 class FavoriteScreen extends StatelessWidget {
   final List<Meal> favorites;
-  FavoriteScreen(this.favorites);
+  const FavoriteScreen(this.favorites, {super.key});
   @override
   Widget build(BuildContext context) {
     if (favorites.isEmpty) {
